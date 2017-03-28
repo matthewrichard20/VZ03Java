@@ -1,5 +1,6 @@
 package zoo;
 
+import zoo.animal.Animal;
 import zoo.cell.Cell;
 
 /*
@@ -90,19 +91,24 @@ public class Zoo {
                 break;
             }
         if (CanMoveAnimal(x,y,tox,toy)){
-            map[tox][toy]->GetCage()->SetAnimal(map[x][y]->GetCage()->GetAnimal());
-            map[x][y]->GetCage()->ClearAnimal();
+            map[tox][toy].GetCage().SetAnimal(map[x][y].GetCage().GetAnimal());
+            map[x][y].GetCage().ClearAnimal();
             moved = true;
             } else {
             to = (to % 4) + 1;
             }
         }
     }
-    /** @brief mengecek apakah bisa memindahkan hewan
+    /**  mengecek apakah bisa memindahkan hewan
      *  prekondisi, map[fromx][fromy] adalah habitat dengan cage
+     * @param fromx absis asal
+     * @param fromy ordinat asal
+     * @param tox absis tujuan
+     * @param toy ordinat tujuan
+     * @return true jika hewan dapat berpindah ke (tox,toy)
     */
     public boolean CanMoveAnimal(int fromx, int fromy, int tox, int toy){
-        return ((map[fromx][fromy]->GetHabitat() == map[tox][toy]->GetHabitat()) && (map[tox][toy]->IsCageAvailable()));
+        return ((map[fromx][fromy].GetHabitat() == map[tox][toy].GetHabitat()) && (map[tox][toy].IsCageAvailable()));
     }
 
     public Cell GetCell(int i, int j){
