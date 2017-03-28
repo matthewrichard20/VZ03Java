@@ -2,6 +2,8 @@ package zoo;
 
 import zoo.animal.Animal;
 import zoo.cell.Cell;
+import zoo.cell.Facility;
+import zoo.cell.Habitat;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -33,38 +35,20 @@ public class Zoo {
     }
     public void SetCell(char c, int i , int j){
         switch (c) {
-            case ('-') : {
-                map[i][j] = new Route;
-            } break;
-            case ('W') : {
-                map[i][j] = new Water(true);
-            } break; // ada cage, inisialisasi pointer cage
-            case ('A') : {
-                map[i][j] = new Air(true);
-            } break; // ada cage, inisialisasi pointer cage, Biar konsisten F gw ganti A ya
-            case ('L') : {
-                map[i][j] = new Land(true);
-            } break; // ada cage, inisialisasi pointer cage
-            case ('w') : {
-                map[i][j] = new Water(false);
-            } break; // habitat aja
-            case ('a') : {
-                map[i][j] = new Air(false);
-            } break; // habitat aja
+            case ('W') :
+            case ('A') :
+            case ('L') :
+            case ('w') : 
+            case ('a') : 
             case ('l') : {
-                map[i][j] = new Land(false);
+                map[i][j] = new Habitat(c);
             } break; // habitat aja
-            case ('P') : {
-                map[i][j] = new Park;
-            } break;
-            case ('R') : {
-                map[i][j] = new Restaurant;
-            } break;
-            case ('E') : {
-                map[i][j] = new Gate('E');
-            } break;
+            case ('P') :
+            case ('R') :
+            case ('-') :
+            case ('E') : 
             case ('X') : {
-                map[i][j] = new Gate('X');
+                map[i][j] = new Facility(c);
             } break;
         }
     }    

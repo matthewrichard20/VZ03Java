@@ -1,5 +1,6 @@
 package zoo.cell;
 
+import zoo.Renderable;
 import zoo.animal.Animal;
 
 /*
@@ -13,7 +14,7 @@ import zoo.animal.Animal;
  *
  * @author RichardMatthew
  */
-public class Cell {
+public class Cell implements Renderable {
 
     char code;
     int x;
@@ -30,25 +31,10 @@ public char GetHabitat() {return ' ';}
 
 public boolean IsCageAvailable() {return false;}
 
-public Cage GetCage(){return null;}
+    public Cage GetCage(){return null;}
 
-public void PurifyAir(){}
-
-public void CleanNet(){}
-
-public void WaterTree(){}
-
-public void PlantTree(){}
-
-public void TrimGrass(){}
-
-public void CleanWater(){}
-
-public void PutWPlant(){}
-
-public void PutRock(){}
-
-public char Render(){return code;}
+    @Override
+    public char Render(){return code;}
 
 public void InitBoolVisited() {visited = false;}
 
