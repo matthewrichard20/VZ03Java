@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import zoo.animal.Animal;
+import zoo.animal.Eagle;
 
 /**
  *
@@ -20,22 +22,6 @@ public class HabitatTest {
     
     public HabitatTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of IsCage method, of class Habitat.
@@ -43,12 +29,36 @@ public class HabitatTest {
     @Test
     public void testIsCage() {
         System.out.println("IsCage");
-        Habitat instance = null;
-        boolean expResult = false;
-        boolean result = instance.IsCage();
+        
+        boolean expResult = true;
+        boolean result = true;
+        Habitat instance = new Habitat('L');
+        if (instance.IsCage())
+        {
+            System.out.println("Can detect IsCage = true");
+            result = result && true;
+        } else {
+            System.out.println("Can't detect IsCage = true");
+            result = result && false;
+        }
+        
+        Habitat instance2 = new Habitat('a');
+        if (!instance2.IsCage())
+        {
+            System.out.println("Can detect IsCage = false");
+            result = result && true;
+        } else {
+            System.out.println("Can't detect IsCage = false");
+            result = result && false;
+        }
+        if (result){
+            System.out.println("IsCage passed the test");
+        }
+        else
+        {
+            System.out.println("IsCage didn't passed the test");
+        }
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,12 +67,37 @@ public class HabitatTest {
     @Test
     public void testIsCageAvailable() {
         System.out.println("IsCageAvailable");
-        Habitat instance = null;
-        boolean expResult = false;
-        boolean result = instance.IsCageAvailable();
+        boolean expResult = true;
+        boolean result = true;
+        Habitat instance = new Habitat('L');
+        if (instance.IsCageAvailable())
+        {
+            System.out.println("Can detect IsCageAvailable = true");
+            result = result && true;
+        } else {
+            System.out.println("Can't detect IsCageAvailable = true");
+            result = result && false;
+        }
+        
+        Habitat instance2 = new Habitat('A');
+        Animal a = new Eagle(200);
+        instance2.SetAnimal(a);
+        if (!instance2.IsCageAvailable())
+        {
+            System.out.println("Can detect IsCageAvailable = false");
+            result = result && true;
+        } else {
+            System.out.println("Can't detect IsCageAvailable = false");
+            result = result && false;
+        }
+        if (result){
+            System.out.println("IsCageAvailable passed the test");
+        }
+        else
+        {
+            System.out.println("IsCageAvailable didn't passed the test");
+        }
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -71,12 +106,18 @@ public class HabitatTest {
     @Test
     public void testGetCage() {
         System.out.println("GetCage");
-        Habitat instance = null;
+        Habitat instance = new Habitat('L');
         Cage expResult = null;
         Cage result = instance.GetCage();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        if (result != expResult){
+            System.out.println("Can GetCage");
+            assert(true);
+        }
+        else{
+            System.out.println("Can't GetCage");
+            assert(false);
+        }
+        
     }
 
     /**

@@ -12,7 +12,7 @@ import zoo.animal.Animal;
 
 /**
  *
- * @author RichardMatthew, StevannoHero
+ * @author RichardMatthew
  */
 public class Cell implements Renderable {
 
