@@ -16,7 +16,11 @@ package zoo.animal;
   */
 
 public class Insect extends Animal{
-
+    /**Constructor
+     * konstruktor insect dengan parameter w
+     * @param w 
+     * berat badan dari insect
+     */
     public Insect(int w) {
         super(w);
     }

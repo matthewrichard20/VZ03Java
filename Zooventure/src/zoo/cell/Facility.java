@@ -10,29 +10,34 @@ package zoo.cell;
  * @author RichardMatthew
  */
 
-/**Facility
- * Kelas yang menangani facility
+/**Class Facility
+ * kelas yang menyatakan suatu fasilitas
  */
 public class Facility extends Cell{
-    /**Constructor
-     * Konstruktor dengan parameter tipe dari facility
+
+    /**Construktor
+     * konstruktor dengan parameter tipe dari fasilitas
+     * @param type
+     * kode dari tipe fasilitas
      */
     public Facility(char type){
         code = type;
     }
     
     /**Interact
-     * melakukan interaksi dengan facility
+     * melakukan interaksi dengan suatu fasilitas
      */
     public void Interact(){
         switch (code){
-            case 'P' :
-                System.out.println( "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur");   
-                break;
+            case 'P' :{
+             System.out.println( "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur");   
+             break;
+            }
             
-            case 'R' :
-                System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink");   
-                break;
+            case 'R' :{
+             System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink"); 
+             break;
+            }
         }
     }
 }

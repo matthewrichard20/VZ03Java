@@ -18,6 +18,10 @@ import zoo.Renderable;
  * Kelas yang menangani hewan-hewan pada zoo
  */
 public class Animal implements Renderable{
+
+    /**DietType
+     * menyatakan tipe pemakan sepert apakah suatu animal itu
+     */
     protected DietType diet;
     char[] habitat;
     char code;
@@ -49,6 +53,10 @@ public class Animal implements Renderable{
         return name;
     }
     
+    /**GetDiet
+     * mengembalikan jenis makanan yang dimakan animal
+     * @return DietType
+     */
     public DietType GetDiet(){
         return diet;
     }
@@ -68,7 +76,7 @@ public class Animal implements Renderable{
         System.out.print(name);
         diet.Feeds(CalculateFood());
         System.out.print(name);
-        System.out.print(" menikmati makanannya dengan lahap");
+        System.out.println(" menikmati makanannya dengan lahap");
     }
     
     /**Mengubah kondisi jinak tidaknya hewan
@@ -98,11 +106,16 @@ public class Animal implements Renderable{
      * @return 
      * Mengembalikan nilai makanan yang dibutuhkan hewan
      */
-
     public double CalculateFood(){
         return ( (((double)weight)/100) * (double)diet.GetPortion());
     }
     
+    /**Interact
+     * Method dummy untuk dioverride oleh kelas anak
+     */
+    public void Interact(){
+        
+    }
     
     /**Mengambil posisi x dari hewan
      * @return x
