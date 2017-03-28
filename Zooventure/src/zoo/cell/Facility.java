@@ -16,13 +16,13 @@ public class Facility extends Cell{
     
     public void Interact(){
         switch (code){
-            case 'p' :{
+            case 'P' :{
              System.out.println( "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur");   
-            }
+            } break;
             
-            case 'r' :{
+            case 'R' :{
              System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink");   
-            }
+            } break;
         }
     }
 }
