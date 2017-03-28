@@ -14,7 +14,11 @@ package zoo.animal;
   * Kelas Reptile untuk membuat hewan dengan tipe reptil
   */
 public class Reptile extends Animal{
-
+    /**Constructor
+     * konstruktor reptil dengan parameter w
+     * @param w 
+     * berat badan dari reptil
+     */
     public Reptile(int w) {
         super(w);
     }
