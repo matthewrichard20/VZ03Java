@@ -20,13 +20,13 @@ public class Facility extends Cell{
     
     public void Interact(){
         switch (code){
-            case 'p' :{
-             System.out.println( "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur");   
-            }
+            case 'P' :
+                System.out.println( "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur");   
+                break;
             
-            case 'r' :{
-             System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink");   
-            }
+            case 'r' :
+                System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink");   
+                break
         }
     }
 }
