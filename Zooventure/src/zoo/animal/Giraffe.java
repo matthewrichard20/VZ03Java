@@ -24,7 +24,7 @@ public class Giraffe extends Mammal{
      */
     public Giraffe(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(40,'H');
         habitat = new char[2];
         habitat[0]='l';
         habitat[1]='0';

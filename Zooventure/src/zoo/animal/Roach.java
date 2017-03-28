@@ -23,7 +23,7 @@ public class Roach extends Insect{
      * @param w Nilai dari berat badan kecoak*/
     public Roach(int w){
         super(w);
-        diet = new DietType(w,'O');
+        diet = new DietType(20,'O');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = 'f';

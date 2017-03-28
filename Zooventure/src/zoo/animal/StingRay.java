@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Pisces;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -24,7 +21,7 @@ public class StingRay extends Pisces {
      */
     public StingRay(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(40,'H');
         habitat = new char[2];
         habitat[0] = 'w';
         habitat[1] = '0';

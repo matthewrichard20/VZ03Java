@@ -21,7 +21,7 @@ public class Mantis extends Insect{
      */
     public Mantis(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(30,'H');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';

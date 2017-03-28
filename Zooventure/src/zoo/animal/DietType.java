@@ -32,7 +32,8 @@ public class DietType {
     public int GetPortion(){
         return portion;
     }
-    public void Feeds(int food){
+
+  public void Feeds(double food){
         System.out.print(" diberikan ");
         switch (code){
             case 'C':

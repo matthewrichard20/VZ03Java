@@ -21,7 +21,7 @@ public class Snake extends Reptile{
      */
     public Snake(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(70,'C');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';

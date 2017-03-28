@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Aves;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -26,7 +23,7 @@ public class Eagle extends Aves{
      */
     public Eagle(int w){
         super(w);        
-        diet = new DietType(w,'C');
+        diet = new DietType(60,'C');
         habitat = new char[2];
         habitat[0]='f';
         habitat[1]='0';

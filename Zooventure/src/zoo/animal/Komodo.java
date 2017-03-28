@@ -8,7 +8,7 @@ package zoo.animal;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi aputra
  */
 
 
@@ -22,7 +22,7 @@ public class Komodo extends Reptile{
      */
      public Komodo(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(70,'C');
         habitat = new char[2];
         habitat[0]='l';
         habitat[1]='0';

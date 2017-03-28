@@ -22,7 +22,7 @@ public class ClownFish extends Pisces {
      */
     public ClownFish(int w){
        super(w);
-       diet = new DietType(w,'H');
+       diet = new DietType(15,'H');
        habitat = new char[2];
        habitat[0]='w';
        habitat[1]='0';

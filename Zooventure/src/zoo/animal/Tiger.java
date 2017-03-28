@@ -24,7 +24,7 @@ public class Tiger extends Mammal{
      */
     public Tiger(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(60,'C');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';

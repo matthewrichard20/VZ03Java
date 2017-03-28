@@ -22,7 +22,7 @@ public class Dragonfly extends Insect {
      */
     public Dragonfly(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(20,'H');
         habitat = new char[2];
         habitat[0]='f';
         habitat[1]='0';

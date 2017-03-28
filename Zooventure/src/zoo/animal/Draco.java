@@ -22,7 +22,7 @@ public class Draco extends Reptile{
      */
     public Draco(int w){
        super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(40,'C');
         habitat = new char[2];
         habitat[0]='f';
         habitat[1]='l';
