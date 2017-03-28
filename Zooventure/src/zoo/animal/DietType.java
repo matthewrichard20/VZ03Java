@@ -11,8 +11,8 @@ package zoo.animal;
  * @author Lathifah Nurrahmah
  */
 
-/**@class DietType
- *
+/**DietType
+ * kelas yang menjelaskan tipe pemakan apakah suatu hewan itu
  */
 public class DietType {
     private static final int umum = 60;
@@ -31,5 +31,20 @@ public class DietType {
     }
     public int GetPortion(){
         return portion;
+    }
+    public void Feeds(int food){
+        System.out.print(" diberikan ");
+        switch (code){
+            case 'C':
+                System.out.print("daging");
+                break;
+            case 'O':
+                System.out.print("campuran daging dan sayur");
+                break;
+            case 'H':
+                System.out.print("tumbuhan");
+                break;
+        }
+        System.out.println(" sebanyak " + food + " gram");
     }
 }

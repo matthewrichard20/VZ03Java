@@ -9,6 +9,10 @@ package zoo.cell;
  *
  * @author RichardMatthew
  */
+
+/**Facility
+ * 
+ */
 public class Facility extends Cell{
     public Facility(char type){
         code = type;
@@ -16,13 +20,13 @@ public class Facility extends Cell{
     
     public void Interact(){
         switch (code){
-            case 'P' :{
+            case 'p' :{
              System.out.println( "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur");   
-            } break;
+            }
             
-            case 'R' :{
+            case 'r' :{
              System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink");   
-            } break;
+            }
         }
     }
 }

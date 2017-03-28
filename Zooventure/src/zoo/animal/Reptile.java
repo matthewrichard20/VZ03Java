@@ -11,9 +11,9 @@ import zoo.animal.Animal;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
-/** @class Reptile
+/** Reptile
   * Kelas Reptile untuk membuat hewan dengan tipe reptil
   */
 public class Reptile extends Animal{
@@ -26,7 +26,6 @@ public class Reptile extends Animal{
      * Menjelaskan secara umum tentang hewan tersebut*/
     void Description(){
         System.out.println("Hewan reptile ini memiliki darah dingin.");
-        AnimalDescription();
     }
     
 }

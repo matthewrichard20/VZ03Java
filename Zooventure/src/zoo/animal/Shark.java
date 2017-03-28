@@ -38,14 +38,15 @@ public class Shark extends Pisces{
     /** Interaksi.
      * Berinteraksi dengan hewan hiu*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Hiu bergerak menyusuri aquarium yang ada.");
         Talk();
     }
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Hiu merupakan salah satu hewan ganas yang terdapat di air.");
         System.out.println("Hiu mempunyai tubuh yang dilapisi kulit dermal denticle yang melindungi mereka dari kerusakan dari parasit.");
         System.out.println("Hiu juga diceritakan dalam beberapa mitologi di hawaii, yaitu cerita tenatng manusia hiu.");
