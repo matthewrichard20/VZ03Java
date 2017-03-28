@@ -1,7 +1,6 @@
 package zoo.animal;
 
 
-import zoo.animal.Mammal;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,7 +13,7 @@ import zoo.animal.Mammal;
  * @author Ega Rifqi Saputra
  */
 
-/** @class Zebra.
+/** Zebra.
   * Kelas Zebra untuk membuat hewan zebra
   */
 public class Zebra extends Mammal{
@@ -39,7 +38,7 @@ public class Zebra extends Mammal{
      * Berinteraksi dengan hewan zebra
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Zebra berlari di padang rumput");
         Talk();
         
@@ -48,7 +47,8 @@ public class Zebra extends Mammal{
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Zebra adalah binatang dengan warna belang-belang putih dan hitam");
         System.out.println("Zebra adalah hewan mamalia dan merupakan hewan herbivora");
         System.out.println("Zebra merupaka hewan dari famili kuda. Habitat asli zebra ini tersebar di Afrika");

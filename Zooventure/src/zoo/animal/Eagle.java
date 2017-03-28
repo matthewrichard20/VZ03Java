@@ -14,7 +14,7 @@ import zoo.animal.Aves;
  * @author Ega Rifqi Saputra
  */
 
-/**@class Eagle
+/**Eagle
  * Kelas Eagle untuk membuat hewan elang
  */
 public class Eagle extends Aves{
@@ -41,7 +41,7 @@ public class Eagle extends Aves{
      * Berinteraksi dengan hewan elang
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Elang menatap dengan matanya yang tajam");
         System.out.println("Dia mengepakkan sayapnya");
         Talk();
@@ -50,7 +50,8 @@ public class Eagle extends Aves{
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Burung karnivora yang biasa memakan ular atau hewan lain");
     }
 }

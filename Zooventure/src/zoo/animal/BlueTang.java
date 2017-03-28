@@ -36,7 +36,7 @@ public class BlueTang extends Pisces {
     /**Berinteraksi dengan hewan ikan blue tang
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Ikan blue tang berenang-renang dalam air");
         System.out.println("Hai Dory!");
         Talk();
@@ -44,7 +44,8 @@ public class BlueTang extends Pisces {
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Ikan blur tang adalah suatu jenis ikan hias berwarna biru dengan aksen hitam");
         System.out.println("Jika anda sudah menonton film 'Finding Nemo', Dory adalah ikan blue tang");
     }

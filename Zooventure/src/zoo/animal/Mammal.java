@@ -15,7 +15,7 @@ import zoo.animal.Animal;
  */
 
 
-/** @class Mammal
+/** Mammal
   * Kelas Mammal untuk membuat hewan tipe mamalia
   */
 public class Mammal extends Animal{
@@ -26,7 +26,8 @@ public class Mammal extends Animal{
     /** Description.
      * Menjelaskan secara umum tentang hewan tersebut*/
     public void Description(){
-      System.out.println("Hewan tersebut termasuk pada hewan mamalia. Pembagian tersebut berdasarkan hewan yang memiliki kelenjar susu.");  
-      AnimalDescription();
+      System.out.println("Hewan tersebut termasuk pada hewan mamalia. ");
+      System.out.println("Pembagian tersebut berdasarkan hewan yang memiliki kelenjar susu.");  
+
     }
 }

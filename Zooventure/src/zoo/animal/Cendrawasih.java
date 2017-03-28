@@ -11,8 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class Cendrawasih
- * 
+/**Cendrawasih
  * Kelas Cendrawasih untuk membuat hewan cendrawasih
  */
 public class Cendrawasih extends Aves{
@@ -37,7 +36,7 @@ public class Cendrawasih extends Aves{
     /**Berinteraksi dengan hewan cenrawasih
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Cendrawasih mengepakkan sayapnya");
         System.out.println("Burung surga terbang lagi");
         Talk();
@@ -45,7 +44,8 @@ public class Cendrawasih extends Aves{
     
     /**Mernjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Cendrawasih adalah hewan asli dari daerah Indonesia Timur");
         System.out.println("Burung ini menjadi lambang dari daera Irian Jaya");
     }

@@ -11,10 +11,10 @@ import zoo.animal.Aves;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
 
-/** @class Pigeon.
+/** Pigeon.
   * Kelas Pigeon untuk membuat hewan burung merpati
   */
 public class Pigeon extends Aves{
@@ -38,7 +38,7 @@ public class Pigeon extends Aves{
     /** Interaksi.
      * Berinteraksi dengan hewan merpati*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Burung dara cukup sulit untuk di pegang, ia akan terbang ketika kita mendekat.");
         System.out.println("Namun burung dara akan mendekat ketika ada makanan di dekatnya.");
         Talk();
@@ -46,7 +46,8 @@ public class Pigeon extends Aves{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Burung merpati terdapat di seluruh duniam namun varietas terbesar terdapat di indomaata.");
         System.out.println("Burung merpati membangun sangkarnya dari ranting dan sisa-sisa lainnya.");
     }

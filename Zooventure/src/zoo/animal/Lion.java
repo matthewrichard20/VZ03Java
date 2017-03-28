@@ -8,10 +8,10 @@ package zoo.animal;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
 
-/** @class Lion
+/** Lion
   * Kelas Lion untuk membuat hewan singa
   */
 public class Lion extends Mammal{
@@ -37,7 +37,7 @@ public class Lion extends Mammal{
      * Berinteraksi dengan hewan singa
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Singa mengendap-ngendap di balik semak");
         System.out.println("Tampaknya dia ingin menyergap sesuatu");
         Talk();
@@ -46,7 +46,8 @@ public class Lion extends Mammal{
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Hewan karnivora yang memiliki habitat asli di daerah Afrika");
     }
 }
