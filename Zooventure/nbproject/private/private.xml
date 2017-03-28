@@ -3,14 +3,41 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/Butterfly.java</file>
-            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/Habitat.java</file>
-            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/Animal.java</file>
-            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/cell/Cage.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/BlueTang.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Zebra.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Animal.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Dragonfly.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Bat.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/cell/Habitat.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Draco.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Penguin.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Roach.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Snake.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Komodo.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Reptile.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Swan.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Lion.java</file>
             <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/Zoo.java</file>
-            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/Cendrawasih.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Cendrawasih.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/DietType.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/Renderable.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Crocodile.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Giraffe.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Pigeon.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Tiger.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Insect.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Mantis.java</file>
             <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/cell/Cell.java</file>
-            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/Aves.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/StingRay.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/ClownFish.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Aves.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Mammal.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Eagle.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Shark.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/cell/Cage.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Hippo.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Pisces.java</file>
+            <file>file:/Users/RichardMatthew/Documents/Programming/Java/Zooventure/src/zoo/animal/Butterfly.java</file>
         </group>
     </open-files>
 </project-private>
