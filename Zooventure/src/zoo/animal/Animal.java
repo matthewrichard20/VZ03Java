@@ -1,5 +1,7 @@
 package zoo.animal;
 
+import zoo.Renderable;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,7 +18,7 @@ package zoo.animal;
  * 
  Kelas yang menangani hewan-hewan pada zoo
  */
-public class Animal {
+public class Animal implements Renderable{
     protected DietType diet;
     char[] habitat;
     char code;
