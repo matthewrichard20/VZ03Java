@@ -98,6 +98,7 @@ public class Animal implements Renderable{
      * @return 
      * Mengembalikan nilai makanan yang dibutuhkan hewan
      */
+
     public double CalculateFood(){
         return ( (((double)weight)/100) * (double)diet.GetPortion());
     }
