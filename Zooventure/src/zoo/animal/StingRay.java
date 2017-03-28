@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Pisces;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,7 +11,7 @@ import zoo.animal.Pisces;
  * @author Ega Rifqi Saputra
  */
 
-/** @class Sting_Ray.
+/** StingRay.
   * Kelas StingRay untuk membuat hewan ikan pari
   */
 public class StingRay extends Pisces {
@@ -24,7 +21,7 @@ public class StingRay extends Pisces {
      */
     public StingRay(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(40,'H');
         habitat = new char[2];
         habitat[0] = 'w';
         habitat[1] = '0';
@@ -37,7 +34,7 @@ public class StingRay extends Pisces {
     /** Interaksi.
      * Berinteraksi dengan hewan pari*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Ikan pari berenang mengitari aquarium yang terbatas luasnya.");
         System.out.println("Ikan pari mengepakkan 'sayap'nya dalam berenang.");
         Talk();
@@ -45,7 +42,8 @@ public class StingRay extends Pisces {
             
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Ikan pari memiliki sirip yang panjangnya cukup panjang, sehingga bisa membantu dalam berenang.");
         System.out.println("Ikan pari dapat ditemuka di lautan tropis di seluruh dunia. Persebaran yang luas dan penampilannya yang unik");
         System.out.println("menyebabkan ikan ini memiliki banyak nama.");

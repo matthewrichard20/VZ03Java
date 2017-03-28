@@ -11,7 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/** @class Hippo
+/** Hippo
   * Kelas Hippo untuk membuat hewan kuda nil
   */
 public class Hippo extends Mammal{
@@ -23,7 +23,7 @@ public class Hippo extends Mammal{
      */
     public Hippo(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(30,'H');
         habitat = new char[2];
         habitat[0]='w';
         habitat[1]='l';
@@ -38,7 +38,7 @@ public class Hippo extends Mammal{
      * Berinteraksi dengan hewan kuda nil
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Kuda nil membuka mulutnya");
         System.out.println("Giginya tampak");
         Talk();
@@ -47,7 +47,8 @@ public class Hippo extends Mammal{
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Hewan yang biasa hidup di daerah Afrika sekitar sungai");
         System.out.println("Biasa tinggal berkelompok");
     }

@@ -11,8 +11,8 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class Eagle
- * Kelas Eagle untuk membuat hewan elang
+/**Dragonfly
+ * Kelas Dragonfly untuk membuat hewan capung
  */
 public class Dragonfly extends Insect {
     
@@ -22,7 +22,7 @@ public class Dragonfly extends Insect {
      */
     public Dragonfly(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(20,'H');
         habitat = new char[2];
         habitat[0]='f';
         habitat[1]='0';
@@ -37,7 +37,7 @@ public class Dragonfly extends Insect {
      * Berinteraksi dengan hewan capung
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Capung hinggap di rumput");
         System.out.println("Begitu didekati capung langsung terbang");
         Talk();
@@ -46,7 +46,8 @@ public class Dragonfly extends Insect {
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Serangga dengan sayap tipis yang transparan");
         System.out.println("Biasa ditemukan di daerah berumput tinggi");
     }

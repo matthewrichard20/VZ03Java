@@ -11,8 +11,8 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class clown_fish
- * Kelas clown_fish untuk membuat hewan ikan badut
+/**ClownFish
+ * Kelas ClownFish untuk membuat hewan ikan badut
  * 
  */
 public class ClownFish extends Pisces {
@@ -22,7 +22,7 @@ public class ClownFish extends Pisces {
      */
     public ClownFish(int w){
        super(w);
-       diet = new DietType(w,'H');
+       diet = new DietType(15,'H');
        habitat = new char[2];
        habitat[0]='w';
        habitat[1]='0';
@@ -36,7 +36,7 @@ public class ClownFish extends Pisces {
     /**Berinteraksi dengan hewan ikan badut
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Ikan badut berenang-renang bebas di dalam akuarium");
         System.out.println("Merlin? Nemo?");
         Talk();
@@ -44,7 +44,8 @@ public class ClownFish extends Pisces {
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
        System.out.println("Ikan ini berwarna oranye dengan garis-garis hitam");
        System.out.println("Ikan badut ini terkenal karena tokoh pada film 'Finding Nemo'"); 
     }

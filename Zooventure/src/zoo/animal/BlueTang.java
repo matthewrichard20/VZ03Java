@@ -11,7 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class blue_tang
+/**BlueTang
  * Kelas BlueTang untuk membuat hewan blue tang atau ikan dory
  */
 public class BlueTang extends Pisces {
@@ -22,7 +22,7 @@ public class BlueTang extends Pisces {
      */
     public BlueTang(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(30,'H');
         habitat = new char[2];
         habitat[0] = 'w';
         habitat[1] = '0';
@@ -36,7 +36,7 @@ public class BlueTang extends Pisces {
     /**Berinteraksi dengan hewan ikan blue tang
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Ikan blue tang berenang-renang dalam air");
         System.out.println("Hai Dory!");
         Talk();
@@ -44,7 +44,8 @@ public class BlueTang extends Pisces {
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Ikan blur tang adalah suatu jenis ikan hias berwarna biru dengan aksen hitam");
         System.out.println("Jika anda sudah menonton film 'Finding Nemo', Dory adalah ikan blue tang");
     }

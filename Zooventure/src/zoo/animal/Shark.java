@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Pisces;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,7 +11,7 @@ import zoo.animal.Pisces;
  * @author Ega Rifqi Saputra
  */
 
-/** @class StingRay.
+/** StingRay.
   * Kelas StingRay untuk membuat hewan hiu
   */
 public class Shark extends Pisces{
@@ -24,7 +21,7 @@ public class Shark extends Pisces{
      */
     public Shark(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(70,'C');
         habitat = new char[2];
         habitat[0] = 'w';
         habitat[1] = '0';
@@ -38,14 +35,15 @@ public class Shark extends Pisces{
     /** Interaksi.
      * Berinteraksi dengan hewan hiu*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Hiu bergerak menyusuri aquarium yang ada.");
         Talk();
     }
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Hiu merupakan salah satu hewan ganas yang terdapat di air.");
         System.out.println("Hiu mempunyai tubuh yang dilapisi kulit dermal denticle yang melindungi mereka dari kerusakan dari parasit.");
         System.out.println("Hiu juga diceritakan dalam beberapa mitologi di hawaii, yaitu cerita tenatng manusia hiu.");

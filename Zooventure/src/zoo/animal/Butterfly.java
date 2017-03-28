@@ -11,7 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class
+/**Butterfly
  * Kelas Butterfly untuk membuat hewan kupu kupu
  */
 public class Butterfly extends Insect {
@@ -21,7 +21,7 @@ public class Butterfly extends Insect {
      */
     public Butterfly(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(30,'H');
         habitat = new char[2];
         habitat[0] = 'f';
         habitat[1] = '0';
@@ -35,7 +35,7 @@ public class Butterfly extends Insect {
     /**Berinteraksi dengan hewan kupu-kupu
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Kupu-kupu hinggap di suatu bunga");
         System.out.println("Kupu-kupu itu terbang lagi");
         Talk();
@@ -43,7 +43,8 @@ public class Butterfly extends Insect {
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Kupu-kupu adalah serangga dengan warna yang bermacam-macam");
         System.out.println("Warnanya bergantung pada jenis kupu-kupu dan gendernya");
     }

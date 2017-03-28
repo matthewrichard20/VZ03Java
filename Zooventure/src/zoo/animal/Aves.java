@@ -11,7 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/** @class Aves
+/** Aves
   * Kelas Aves untuk membuat hewan jenis aves
   */
 public class Aves extends Animal{
@@ -23,7 +23,6 @@ public class Aves extends Animal{
     /**Menjelaskan secara umum tentang hewan tersebut*/
     public void Description(){
         System.out.println("Hewan tersebut termasuk ke dalam hewan aves atau unggas.");
-        AnimalDescription();
     }
     
     

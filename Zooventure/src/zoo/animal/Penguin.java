@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Aves;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,10 +8,10 @@ import zoo.animal.Aves;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
 
-/** @class Penguin.
+/** Penguin.
   * Kelas Penguin untuk membuat hewan pinguin
   */
 public class Penguin extends Aves{
@@ -38,7 +35,7 @@ public class Penguin extends Aves{
     /** Interaksi.
      * Berinteraksi dengan hewan pinguin*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Penguin bermain main dengan 'arena' yang telah dibuat di kandangnya");
         System.out.println("Mereka berseluncur di 'arena' mereka dengan menggunakan perut mereka");
         Talk();
@@ -46,7 +43,8 @@ public class Penguin extends Aves{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Penguin adalah hewan akuatik jenis burung yang tidak bisa terbang dan secara umum hidup di belahan bumi selatan.");
         System.out.println("Penguin terlihat tidak takut dengan manusia, bahkan mendekati peneliti yang sedang mempelajari mereka. ");
     }

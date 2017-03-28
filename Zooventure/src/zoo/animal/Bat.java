@@ -12,7 +12,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class Bat
+/**Bat
  * Kelas Bat untuk membuat hewan kelelawar
  * 
  */
@@ -24,7 +24,7 @@ public class Bat extends Mammal{
      */
     public Bat(int w) {
         super(w);
-        diet = new DietType(w, 'O');
+        diet = new DietType(40, 'O');
         habitat = new char[2];
         habitat[0] = 'f';
         habitat[1] = '0';
@@ -38,7 +38,7 @@ public class Bat extends Mammal{
     /**Berinteraksi dengan kelelawar
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Kelelawar mengepakkan sayapnya sekali");
         System.out.println("Tampaknya sedang tidur");
         Talk();
@@ -46,7 +46,8 @@ public class Bat extends Mammal{
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Satu-satunya mamalia yang dapat terbang");
     }
 }

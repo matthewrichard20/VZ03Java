@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Aves;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,10 +8,10 @@ import zoo.animal.Aves;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
 
-/** @class Pigeon.
+/** Pigeon.
   * Kelas Pigeon untuk membuat hewan burung merpati
   */
 public class Pigeon extends Aves{
@@ -24,7 +21,7 @@ public class Pigeon extends Aves{
      */
     public Pigeon(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(40,'H');
         habitat = new char[2];
         habitat[0] = 'f';
         habitat[1] = '0';
@@ -38,7 +35,7 @@ public class Pigeon extends Aves{
     /** Interaksi.
      * Berinteraksi dengan hewan merpati*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Burung dara cukup sulit untuk di pegang, ia akan terbang ketika kita mendekat.");
         System.out.println("Namun burung dara akan mendekat ketika ada makanan di dekatnya.");
         Talk();
@@ -46,7 +43,8 @@ public class Pigeon extends Aves{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Burung merpati terdapat di seluruh duniam namun varietas terbesar terdapat di indomaata.");
         System.out.println("Burung merpati membangun sangkarnya dari ranting dan sisa-sisa lainnya.");
     }

@@ -1,7 +1,6 @@
 package zoo.animal;
 
 
-import zoo.animal.Mammal;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,7 +13,7 @@ import zoo.animal.Mammal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class Tiger
+/**Tiger
  * Kelas Tiger untuk membuat hewan harimau
  * 
  */
@@ -25,7 +24,7 @@ public class Tiger extends Mammal{
      */
     public Tiger(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(60,'C');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';
@@ -38,7 +37,7 @@ public class Tiger extends Mammal{
     /** Interaksi.
      * Berinteraksi dengan hewan harimau*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Harimau sedang bermain dengan teman se spesiesnya.");
         System.out.println("Mereka bermain kejar kejaran hingga terguling guling.");
         Talk();
@@ -46,7 +45,8 @@ public class Tiger extends Mammal{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Harimau adalah jenis kucing terbesar dari spesiesnya, bahkan lebih besar dari singa.");
         System.out.println("Harimau juga adalah kucing tercepat kedua dalam berlari setelah citah.");
         System.out.println(" Dalam keseluruhan karnivora, harimau adalah kucing karnivora terbesar dan ");

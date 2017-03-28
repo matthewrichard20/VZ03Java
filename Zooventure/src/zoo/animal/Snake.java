@@ -11,7 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/** @class Snake.
+/** Snake.
   * Kelas Snake untuk membuat hewan ular
   */
 public class Snake extends Reptile{
@@ -21,7 +21,7 @@ public class Snake extends Reptile{
      */
     public Snake(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(70,'C');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';
@@ -42,7 +42,7 @@ public class Snake extends Reptile{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
         System.out.println("Ular adalah reptilia tak berkaki dan bertubuh panjang.");
         System.out.println("Ular memiliki sisik seperti kadal dan digolongkan ke dalam reptil bersisik.");
     }

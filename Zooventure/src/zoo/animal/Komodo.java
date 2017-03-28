@@ -8,12 +8,12 @@ package zoo.animal;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi aputra
  */
 
 
-/** @class Hippo
-  * Kelas Hippo untuk membuat hewan kuda nil
+/** Komodo
+  * Kelas komodo untuk membuat hewan komodo
   */
 public class Komodo extends Reptile{
     /** Konstruktor.
@@ -22,7 +22,7 @@ public class Komodo extends Reptile{
      */
      public Komodo(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(70,'C');
         habitat = new char[2];
         habitat[0]='l';
         habitat[1]='0';
@@ -38,7 +38,7 @@ public class Komodo extends Reptile{
      * Berinteraksi dengan hewan komodo
      */
      public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Komodo menjulur-julurkan lidahnya");
         System.out.println("Berjalan-jalan dalam kandang");
         Talk();
@@ -47,7 +47,8 @@ public class Komodo extends Reptile{
      /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-     public void AnimalDescription(){
-         System.out.println("Hewan unik Indonesia Tengah yang hanya ada di pulau komodo");
+     private void AnimalDescription(){
+        super.Description();
+        System.out.println("Hewan unik Indonesia Tengah yang hanya ada di pulau komodo");
      }
 }

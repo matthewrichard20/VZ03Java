@@ -11,8 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class draco
- * 
+/**Draco
  * Kelas Draco untuk membuat hewan iguana terbang
  */
 public class Draco extends Reptile{
@@ -23,7 +22,7 @@ public class Draco extends Reptile{
      */
     public Draco(int w){
        super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(40,'C');
         habitat = new char[2];
         habitat[0]='f';
         habitat[1]='l';
@@ -37,7 +36,7 @@ public class Draco extends Reptile{
     /**Berinteraksi dengan hewan bunglon terbang
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Bunglon terbang membuka selaput kulitnya");
         System.out.println("Dia berpindah dengan cara terbang");
         Talk();
@@ -45,7 +44,8 @@ public class Draco extends Reptile{
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Jenis reptil yang memiliki kulit tipis berfungsi sebagai sayap");
     }
 }

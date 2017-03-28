@@ -11,8 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/**@class Crocodile
- * 
+/**Crocodile
  * Kelas Crocodile untuk membuat hewan buaya
  */
 public class Crocodile extends Reptile{
@@ -23,7 +22,7 @@ public class Crocodile extends Reptile{
      */
     public Crocodile(int w){
         super(w);
-        diet = new DietType(w,'C');
+        diet = new DietType(60,'C');
         habitat = new char[2];
         habitat[0]='l';
         habitat[1]='w';
@@ -37,7 +36,7 @@ public class Crocodile extends Reptile{
     /**Berinteraksi dengan hewan buaya
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Buaya membuka mulutnya menunggu mangsa");
         System.out.println("Buaya itu bergerak di dalam kandangnya");
         Talk();
@@ -46,7 +45,8 @@ public class Crocodile extends Reptile{
     
     /**Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Pemakan daging yang biasa ditemukan di daerah dekat sungai");
     }
 }

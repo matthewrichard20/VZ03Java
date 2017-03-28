@@ -11,10 +11,10 @@ import zoo.animal.Insect;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
 
-/** @class Roach.
+/** Roach.
   * Kelas Roach untuk membuat hewan kecoak
   */
 public class Roach extends Insect{
@@ -23,7 +23,7 @@ public class Roach extends Insect{
      * @param w Nilai dari berat badan kecoak*/
     public Roach(int w){
         super(w);
-        diet = new DietType(w,'O');
+        diet = new DietType(20,'O');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = 'f';
@@ -37,7 +37,7 @@ public class Roach extends Insect{
      /** Interaksi.
      * Berinteraksi dengan hewan kecoak*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Kecoak menyusuri kandang yang ada dengan menggunakan kaki kaki kecilnya. ");
         System.out.println("Kecoak terkadang menggerakkan antenanya, dan bahkan mengepakkan sayapnya untuk melayang di udara.");
         Talk();
@@ -45,7 +45,8 @@ public class Roach extends Insect{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Kecoa terdapat hampir di seluruh belahan bumi, kecuali di wilayah kutub.");
         System.out.println("Kecoa sering dianggap sebagai hama dalam bangunan, walaupun tidak semua kecoa yang termasuk kategori hama.");
     }

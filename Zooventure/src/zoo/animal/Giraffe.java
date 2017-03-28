@@ -11,7 +11,7 @@ package zoo.animal;
  * @author Ega Rifqi Saputra
  */
 
-/** @class Giraffe
+/** Giraffe
   * Kelas Giraffe untuk membuat hewan jerapah
   */
 
@@ -24,7 +24,7 @@ public class Giraffe extends Mammal{
      */
     public Giraffe(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(40,'H');
         habitat = new char[2];
         habitat[0]='l';
         habitat[1]='0';
@@ -40,7 +40,7 @@ public class Giraffe extends Mammal{
      * Berinteraksi dengan hewan jerapah
      */
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Jerapah menengok dengan lehernya yang panjang");
         System.out.println("Telinganya bergerak-gerak");
         Talk();
@@ -51,7 +51,8 @@ public class Giraffe extends Mammal{
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan
      */
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Hewan dengan leher panjang dan kaki yang panjang pula");
         System.out.println("Biasa tinggal di padang rumput luas dengan pohon-pohon yang tinggi");
     }

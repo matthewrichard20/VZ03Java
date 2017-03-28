@@ -1,4 +1,4 @@
-package zoo.animal;
+ package zoo.animal;
 
 import zoo.Renderable;
 
@@ -14,9 +14,8 @@ import zoo.Renderable;
  */
 
 
-/**@class Animal
- * 
- Kelas yang menangani hewan-hewan pada zoo
+/**Animal
+ * Kelas yang menangani hewan-hewan pada zoo
  */
 public class Animal implements Renderable{
     protected DietType diet;
@@ -67,7 +66,7 @@ public class Animal implements Renderable{
      */
     public void Feed(){
         System.out.print(name);
-        System.out.print(diet.Feeds(CalculateFood()));
+        diet.Feeds(CalculateFood());
         System.out.print(name);
         System.out.print(" menikmati makanannya dengan lahap");
     }
@@ -99,8 +98,9 @@ public class Animal implements Renderable{
      * @return 
      * Mengembalikan nilai makanan yang dibutuhkan hewan
      */
-    //public int CalculateFood()
-        //return (weight*GetPortion())
+    public double CalculateFood(){
+        return ( (((double)weight)/100) * (double)diet.GetPortion());
+    }
     
     
     /**Mengambil posisi x dari hewan
@@ -134,4 +134,5 @@ public class Animal implements Renderable{
     public void SetY(int _y){
         y = _y;
     }
+    
 }

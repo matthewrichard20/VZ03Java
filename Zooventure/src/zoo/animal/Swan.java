@@ -1,8 +1,5 @@
 package zoo.animal;
 
-
-import zoo.animal.Aves;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,10 +8,10 @@ import zoo.animal.Aves;
 
 /**
  *
- * @author asus
+ * @author Ega Rifqi Saputra
  */
 
-/** @class Swan
+/** Swan
   * Kelas Swan untuk membuat hewan burung angsa
   */
 public class Swan extends Aves{
@@ -24,7 +21,7 @@ public class Swan extends Aves{
      */
     public Swan(int w){
         super(w);
-        diet = new DietType(w,'H');
+        diet = new DietType(35,'H');
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = 'w';
@@ -37,7 +34,7 @@ public class Swan extends Aves{
     /** Interaksi.
      * Berinteraksi dengan hewan burung angsa*/
     public void Interact(){
-        Description();
+        AnimalDescription();
         System.out.println("Angsa berenang renang dengan indahnya di danau");
         System.out.println("Mereka berkumpul bersama temannya, berenang kesana kemari.");
         Talk();
@@ -45,7 +42,8 @@ public class Swan extends Aves{
     
     /** AnimalDescription.
      * Menjelaskan secara khusus mengenai hewan*/
-    public void AnimalDescription(){
+    private void AnimalDescription(){
+        super.Description();
         System.out.println("Angsa adalah burung air berukuran dari genus cygnus famili anatidae. ");
         System.out.println(" Angsa umumnya terdapat di daerah beriklim sedang, jarang terdapat di daerah tropis.");
     }
