@@ -18,22 +18,51 @@ public class DietType {
     private static final int umum = 60;
     private int portion;
     char code;
+
+    /**Constructor
+     * membangun suatu DietType dengan porsi umum
+     * @param _code
+     * kode pembeda dari masing-masing jenis DietType
+     */
     public DietType(char _code){
         portion = umum;
         code = _code;
     }
+
+    /**Constructor
+     * membangun suatu DietType dengan porsi yang ditentukan
+     * @param _portion
+     * porsi makanan hewan dalam gram per gram berat badan
+     * @param _code
+     * kode pembeda dari masing-masing jenis DietType
+     */
     public DietType(int _portion, char _code){
         portion = _portion;
         code = _code;
     }
+
+    /**GetDietCode
+     * mengembalikan karakter pembeda jenis DietType
+     * @return char code
+     */
     public char GetDietCode(){
         return code;
     }
+
+    /**GetPortion
+     * mengembalikan porsi makanan hewan dalam gram per gram berat badan
+     * @return int portion
+     */
     public int GetPortion(){
         return portion;
     }
 
-  public void Feeds(double food){
+    /**Feeds
+     * memberikan makanan kepada hewan
+     * @param food
+     * banyaknya makanan yang diperlukan hewan
+     */
+    public void Feeds(double food){
         System.out.print(" diberikan ");
         switch (code){
             case 'C':

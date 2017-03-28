@@ -16,7 +16,11 @@ package zoo.animal;
   * Kelas Mammal untuk membuat hewan tipe mamalia
   */
 public class Mammal extends Animal{
-
+    /**Constructor
+     * konstruktor mammal dengan parameter w
+     * @param w 
+     * berat badan dari mammal
+     */
     public Mammal(int w) {
         super(w);
     }

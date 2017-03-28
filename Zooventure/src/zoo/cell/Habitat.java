@@ -13,15 +13,22 @@ import zoo.Renderable;
  * @author Lathifah Nurrahmah
  */
 
-/**@class Habitat
- *
+/**Class Habitat
+ * kelas yang menangani suatu habitat dalam cell
  */
 public class Habitat extends Cell {
     private Cage cage;
     private boolean is_cage;
-    
+    private char habitat_type;
+
+    /**Constructor
+     * konstruktor habitat menjadi jenis habitat tertentu
+     * @param type
+     * tipe dari habitat yang dikonstruksi
+     */
     public Habitat(char type){
         code = type;
+        habitat_type = type;
         if (type == 'W' || type == 'F' || type == 'L'){
             switch (type){
                 case 'W': 
@@ -53,13 +60,16 @@ public class Habitat extends Cell {
         return cage;
     }
     public char GetHabitat(){
-        return code;
+        return habitat_type;
     }
     
-    /** @override Render()
+    
+    /**
+     * @return  *  @override Render()
      *  
      * 
      */
+    @Override
     public char Render(){
         if (is_cage && !cage.IsCageEmpty()){
             return cage.GetAnimal().Render();

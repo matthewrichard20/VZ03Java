@@ -10,40 +10,57 @@ import zoo.animal.Animal;
  */
 
 
-/**
- *
+/**Class Cell
+ * kelas yang mewakili satu kotak dalam virtual zoo
  * @author RichardMatthew
  */
 public class Cell implements Renderable {
-
     char code;
-    int x;
-    int y;
-    boolean visited;
+
+    /**Constructor
+     * konstruktor dummy
+     */
     public Cell() {
     }
     
-public Animal GetAnimal() {return null;}
+    /**GetAnimal
+     * fungsi dummy yang akan dioverride oleh child class
+     * @return null animal
+     */
+    public Animal GetAnimal() {return null;}
 
-public void SetAnimal(Animal x){}
+    /**SetAnimal
+     * fungsi dummy yang akan dioverride oleh child clas
+     * @param x
+     * -
+     */
+    public void SetAnimal(Animal x){}
 
-public char GetHabitat() {return ' ';}
+    /**GetHabitat
+     * fungsi dummy yang akan dioverride oleh child clas
+     * @return char
+     */
+    public char GetHabitat() {return ' ';}
 
-public boolean IsCageAvailable() {return false;}
+    /**IsCageAvailable
+     * fungsi dummy yang akan dioverride oleh child clas
+     * @return boolean
+     */
+    public boolean IsCageAvailable() {return false;}
 
+    /**IsCage
+     * fungsi dummy yang akan dioverride oleh child clas
+     * @return boolean
+     */
+    public boolean IsCage() {return false;}
+
+    /**GetCage
+     * fungsi dummy yang akan dioverride oleh child clas
+     * @return cage
+     */
     public Cage GetCage(){return null;}
 
     @Override
     public char Render(){return code;}
-
-public void InitBoolVisited() {visited = false;}
-
-public boolean IsVisited() {return visited;}
-
-public void SetBool( boolean x) {visited = x;}
-
-public void SetAbsis(int a) {x = a;}
-
-public void SetOrdinat(int b) {y = b;}
 
 }
