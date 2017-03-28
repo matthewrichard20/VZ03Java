@@ -32,7 +32,7 @@ public class Facility extends Cell{
             
             case 'R' :
                 System.out.println( "Di restoran ini, kami menjual nasi goreng, ayam goreng, dan soft drink");   
-                break
+                break;
         }
     }
 }
