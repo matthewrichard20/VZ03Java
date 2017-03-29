@@ -234,29 +234,31 @@ public class Zoo {
     public void SetAnimals(){
         n_animal = 0;
         Animal eagle1 = new Eagle(5000);
-        if (((Habitat)GetCell(1,1)).GetCage()!=null){
-            GetCell(1,1).GetCage().SetAnimal(eagle1);
-            GetCell(1,1).GetCage().GetAnimal().SetX(1);
-            GetCell(1,1).GetCage().GetAnimal().SetY(1);
+        if (GetCell(14,1).GetCage()!=null){
+            System.out.println("Test");
+            GetCell(14,1).GetCage().SetAnimal(eagle1);
+            GetCell(14,1).GetCage().GetAnimal().SetX(14);
+            GetCell(14,1).GetCage().GetAnimal().SetY(1);
             animal[n_animal]=eagle1;
     n_animal++;
   }
   Animal blue_tang1 = new BlueTang(600);
-  if (GetCell(0,13).GetCage()!=null){
-    GetCell(0,13).GetCage().SetAnimal(blue_tang1);
-    GetCell(0,13).GetCage().GetAnimal().SetX(13);
-    GetCell(0,13).GetCage().GetAnimal().SetY(0);
+  if (GetCell(16,2).GetCage()!=null){
+    GetCell(16,2).GetCage().SetAnimal(blue_tang1);
+    GetCell(16,2).GetCage().GetAnimal().SetX(16);
+    GetCell(16,2).GetCage().GetAnimal().SetY(2);
     animal[n_animal]=blue_tang1;
     n_animal++;
   }
   Animal butterfly1 = new Butterfly(2);
-  if (GetCell(2,18).GetCage()!=null){
-    GetCell(2,18).GetCage().SetAnimal(butterfly1);
-    GetCell(2,18).GetCage().GetAnimal().SetX(18);
-    GetCell(2,18).GetCage().GetAnimal().SetY(2);
+  if ( GetCell(18,5).GetCage()!=null){
+     GetCell(18,5).GetCage().SetAnimal(butterfly1);
+     GetCell(18,5).GetCage().GetAnimal().SetX(18);
+     GetCell(18,5).GetCage().GetAnimal().SetY(5);
     animal[n_animal]=butterfly1;
     n_animal++;
   }
+  /*
   Animal draco1 = new Draco(500);
   if (GetCell(3,22).GetCage()!=null){
     GetCell(3,22).GetCage().SetAnimal(draco1);
@@ -305,101 +307,7 @@ public class Zoo {
     animal[n_animal]=penguin1;
     n_animal++;
   }
-  /* lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   lion = new Lion(60);
-  if (GetCell(0,28).GetCage()!=null){
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }{
-    GetCell(0,28).GetCage().SetAnimal(lion);
-    GetCell(0,28).GetCage().GetAnimal().SetX(28);
-    GetCell(0,28).GetCage().GetAnimal().SetY(0);
-    animal[n_animal]=lion;
-    n_animal++;
-  }
-   */
+  */
 }
 
     /**CheckAround
