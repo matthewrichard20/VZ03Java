@@ -26,7 +26,7 @@ public class Bat extends Mammal{
         super(w);
         diet = new DietType(40, 'O');
         habitat = new char[2];
-        habitat[0] = 'f';
+        habitat[0] = 'a';
         habitat[1] = '0';
         code = 'b';
         name = "Kelelawar";

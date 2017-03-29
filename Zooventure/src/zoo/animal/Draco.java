@@ -24,7 +24,7 @@ public class Draco extends Reptile{
        super(w);
         diet = new DietType(40,'C');
         habitat = new char[2];
-        habitat[0]='f';
+        habitat[0]='a';
         habitat[1]='l';
         code='D';
         name = "Bunglon terbang";

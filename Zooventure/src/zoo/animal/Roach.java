@@ -26,7 +26,7 @@ public class Roach extends Insect{
         diet = new DietType(20,'O');
         habitat = new char[2];
         habitat[0] = 'l';
-        habitat[1] = 'f';
+        habitat[1] = 'a';
         code='r';
         name = "Kecoak";
         sound = "...";

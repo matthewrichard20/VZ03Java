@@ -24,7 +24,7 @@ public class Cendrawasih extends Aves{
         super(w);
         diet = new DietType(40,'H');
         habitat = new char [2];
-        habitat[0] = 'f';
+        habitat[0] = 'a';
         habitat[1] = '0';
         code = 'c';
         name = "Cendrawasih";

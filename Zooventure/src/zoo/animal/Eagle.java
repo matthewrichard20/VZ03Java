@@ -25,7 +25,7 @@ public class Eagle extends Aves{
         super(w);        
         diet = new DietType(60,'C');
         habitat = new char[2];
-        habitat[0]='f';
+        habitat[0]='a';
         habitat[1]='0';
         code='E';
         name = "Elang";

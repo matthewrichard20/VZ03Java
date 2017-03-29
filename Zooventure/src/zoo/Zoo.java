@@ -70,10 +70,10 @@ public class Zoo {
     public void SetCell(char c, int i , int j){
         switch (c) {
             case ('W') :
-            case ('F') :
+            case ('A') :
             case ('L') :
             case ('w') : 
-            case ('f') : 
+            case ('a') : 
             case ('l') : {
                 map[i][j] = new Habitat(c);
             } break; // habitat aja

@@ -57,8 +57,8 @@ public class HabitatTest {
         else
         {
             System.out.println("IsCage didn't passed the test");
+            fail();
         }
-        assertEquals(expResult, result);
     }
 
     /**
@@ -81,7 +81,7 @@ public class HabitatTest {
         
         Habitat instance2 = new Habitat('A');
         Animal a = new Eagle(200);
-        instance2.SetAnimal(a);
+        instance2.GetCage().SetAnimal(a);
         if (!instance2.IsCageAvailable())
         {
             System.out.println("Can detect IsCageAvailable = false");
@@ -95,9 +95,10 @@ public class HabitatTest {
         }
         else
         {
-            System.out.println("IsCageAvailable didn't passed the test");
+            System.out.println("IsCageAvailable didn't pass the test");
+            fail();
         }
-        assertEquals(expResult, result);
+        
     }
 
     /**
@@ -111,11 +112,10 @@ public class HabitatTest {
         Cage result = instance.GetCage();
         if (result != expResult){
             System.out.println("Can GetCage");
-            assert(true);
         }
         else{
             System.out.println("Can't GetCage");
-            assert(false);
+            fail();
         }
         
     }
@@ -126,26 +126,38 @@ public class HabitatTest {
     @Test
     public void testGetHabitat() {
         System.out.println("GetHabitat");
-        Habitat instance = null;
-        char expResult = ' ';
+        Habitat instance = new Habitat('A');
+        char expResult = 'a';
         char result = instance.GetHabitat();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of Render method, of class Habitat.
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Render");
-        Habitat instance = null;
-        char expResult = ' ';
-        char result = instance.Render();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+        boolean pass = true;
+        System.out.print(result);
+        if(expResult == result){
+            System.out.println("Successfull at GetHabitat with cage");
+            pass = pass && true;
+        }
+        else{
+            System.out.println("Failed at GetHabitat with cage");
+            pass = pass && false;
+        }
+            
+        Habitat instance2 = new Habitat('l');
+        expResult = 'l';
+        result = instance2.GetHabitat();
+        System.out.print(result);
+        if(expResult == result){
+            System.out.println("Successfull at GetHabitat without cage");
+            pass = pass && true;
+        }
+        else{
+            System.out.println("Failed at GetHabitat without cage");
+            pass = pass && false;
+        }
     
+        if(pass){
+            System.out.println("GetHabitat passed the test");
+        }else{
+            System.out.println("GetHabitat didn't pass the test");
+            fail();
+        }
+    }
 }
