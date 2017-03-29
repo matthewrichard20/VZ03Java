@@ -25,6 +25,7 @@ public class Swan extends Aves{
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = 'w';
+        code = 'n';
         name = "Angsa";
         sound = "honk";
         tame = true;
