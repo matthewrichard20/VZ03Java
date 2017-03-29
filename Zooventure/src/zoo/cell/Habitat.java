@@ -27,6 +27,7 @@ public class Habitat extends Cell {
      * tipe dari habitat yang dikonstruksi
      */
     public Habitat(char type){
+        habitat_type = type;
         if (type == 'W' || type == 'A' || type == 'L'){
             switch (type){
                 case 'W': 
@@ -59,7 +60,7 @@ public class Habitat extends Cell {
         return cage;
     }
     public char GetHabitat(){
-        return code;
+        return habitat_type;
     }
     
     
