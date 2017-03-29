@@ -10,6 +10,7 @@ import zoo.cell.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Random;
 
 /**
  * @author Lathifah Nurrahmah
@@ -105,9 +106,11 @@ public class Driver {
             temp[2] = new Point (user.GetX()+1, user.GetY());
             temp[3] = new Point (user.GetX()-1, user.GetY());
             boolean route_found = false;
-            int j = 0;
+            Random rand = new Random ();
+            int j = rand.nextInt(4);
+            int count = 0;
             int exit = 4;
-            while (j < 4 && !route_found){
+            while (count < 4 && !route_found){
                 if (IsPointRouteAvailable(temp[j], zoo, visited, i)){
                     route_found = true;
                     i++;
@@ -117,11 +120,12 @@ public class Driver {
                         zoo.GetCell(temp[j].GetY(), temp[j].GetX()).Render()=='X'){
                     exit = j;
                 }
-                j++;
+                j = (j+1)%4;
+                count++;
             }
             zoo.MoveAnimal();
             if (!route_found){
-                if (exit != 5){
+                if (exit != 4){
                     user = temp[exit];
                 }
                 available = false;
