@@ -28,6 +28,7 @@ public class Zebra extends Mammal{
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';
+        code = 'Z';
         name = "Zebra";
         sound = "*whinny*";
         tame = true;

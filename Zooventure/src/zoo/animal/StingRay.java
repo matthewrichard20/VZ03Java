@@ -25,6 +25,7 @@ public class StingRay extends Pisces {
         habitat = new char[2];
         habitat[0] = 'w';
         habitat[1] = '0';
+        code = 'r';
         name = "Ikan pari";
         sound = "...";
         tame = true;

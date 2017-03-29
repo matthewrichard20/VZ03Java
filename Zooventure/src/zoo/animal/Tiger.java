@@ -28,6 +28,7 @@ public class Tiger extends Mammal{
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';
+        code = 'T';
         name = "Harimau";
         sound = "ROAR!!";
         tame = false;

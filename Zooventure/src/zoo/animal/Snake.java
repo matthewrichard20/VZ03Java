@@ -25,6 +25,7 @@ public class Snake extends Reptile{
         habitat = new char[2];
         habitat[0] = 'l';
         habitat[1] = '0';
+        code = 's';
         name = "Ular";
         sound = "ssssshhhhh~";
         tame = true;
